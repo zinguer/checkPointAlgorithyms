@@ -1,0 +1,18 @@
+ALGORITHM wordCounter
+VAR
+    a,b,c : INTEGER = 0 ;
+    sentence : CHAR
+BEGIN
+    Read(sentence);
+    FOR i FROM 0 TO sentence.length STEP i++  DO
+    c = i
+        IF (sentence[i]=== 'a' or 'e' or 'y'or 'i' or 'o' or 'u') THEN
+        a = a+1
+            set_instructions
+        END_IF
+        IF (sentence[i] === " " or ".") THEN
+            b = b+1
+        END_IF
+    END_FOR
+    Read(a,b,c)   
+END
